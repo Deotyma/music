@@ -1,6 +1,13 @@
 const voice = document.querySelector(".voice");
 const voice2text = document.querySelector(".voice2text");
 const speak = document.querySelector("p.speak");
+const chat = document.querySelector(".chat");
+var player = document.querySelector(".player");
+var fillbar = document.querySelector(".fill");
+var currentTime = document.querySelector(".time");
+
+var audio = new Audio();
+var song = [];
 
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -57,11 +64,25 @@ function botVoice(message) {
 
   if (message.includes("Édith Piaf")) {
     speech.text = "Voilà Édith Piaf";
+    player.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/JKPvx38D4GM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    /*  var audio = new Audio(
+      "../chansons/08EdithPiaf-NonJeNeRegretteRien-1960.mp3"
+    );
+    audio.play(); */
+    chat.classList.add("display");
     console.log("ça marche");
   }
 
   if (message.includes("Charles Aznavour")) {
     speech.text = "Voilà Charles Aznavour";
+    player.innerHTML = `<h1>Charles Aznavour</h1>
+    <h2>Emmenez-moi</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/h6a3oEs-wJc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    /*  var audio = new Audio(
+      "../chansons/08EdithPiaf-NonJeNeRegretteRien-1960.mp3"
+    );
+    audio.play(); */
+    chat.classList.add("display");
     console.log("ça marche");
   }
 

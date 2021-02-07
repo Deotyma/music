@@ -11,6 +11,9 @@ body {
     /* align-items: center; */
     min-height: 100vh;
     background: #041f1e;
+    background-image: url("../images/green-3730595_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: consolas;
     color: black;
     text-align: center;
@@ -26,14 +29,13 @@ body {
 
 }
 
-.micro {}
-
-.fas {
+.fa-microphone-alt {
     padding: 2rem 3rem;
-    color: #f1ab86;
+    color: #ea8148;
+    background-color: #f7dba7;
     text-decoration: none;
     font-size: 5rem;
-    border: solid 2px #f1ab86;
+    border: solid 2px #ea8148;
     border-radius: 50%;
     overflow: hidden;
     transition: 0.2s;
@@ -49,7 +51,7 @@ body {
     display: none;
 }
 
-.fas:hover {
+.fa-microphone-alt:hover {
     color: #ea8148;
     background: #f7dba7;
     box-shadow: 0 0 10px #f7dba7,
